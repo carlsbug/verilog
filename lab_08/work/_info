@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/Documents/FALL 2018/Comp Arich CS147/Project II Milestone 1/prj_02
+vIDENTIFY_1101
+Z0 !s110 1539137399
+!i10b 1
+!s100 :@HV?XhVo>QOj<2[?WN^]2
+I`LiET9`DG^F1zcjdfG1OU1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dF:/Documents/FALL 2018/Comp Arich CS147/lab_08
+w1539137389
+8F:/Documents/FALL 2018/Comp Arich CS147/lab_08/1101_identifier.v
+FF:/Documents/FALL 2018/Comp Arich CS147/lab_08/1101_identifier.v
+L0 16
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1539137399.000000
+!s107 F:/Documents/FALL 2018/Comp Arich CS147/lab_08/1101_identifier.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/Documents/FALL 2018/Comp Arich CS147/lab_08/1101_identifier.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@i@d@e@n@t@i@f@y_1101
+vlab_08_tb
+R0
+!i10b 1
+!s100 3im]TW@cAa48dnTgR<>dB0
+IQXg@cUBInYk?JUm[SdI<I3
+R1
+R2
+w1411966424
+8F:/Documents/FALL 2018/Comp Arich CS147/lab_08/lab_08_tb.v
+FF:/Documents/FALL 2018/Comp Arich CS147/lab_08/lab_08_tb.v
+L0 18
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/Documents/FALL 2018/Comp Arich CS147/lab_08/lab_08_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/Documents/FALL 2018/Comp Arich CS147/lab_08/lab_08_tb.v|
+!s101 -O0
+!i113 1
+R5

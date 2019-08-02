@@ -1,0 +1,19 @@
+{F:/Documents/FALL 2018/Comp Arich CS147/lab_08/lab_08_tb.v} {2 {vlog -work work -stats=none {F:/Documents/FALL 2018/Comp Arich CS147/lab_08/lab_08_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module lab_08_tb
+** Warning: F:/Documents/FALL 2018/Comp Arich CS147/lab_08/lab_08_tb.v(30): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	lab_08_tb
+
+} {} {}} {F:/Documents/FALL 2018/Comp Arich CS147/lab_08/1101_identifier.v} {2 {vlog -work work -stats=none {F:/Documents/FALL 2018/Comp Arich CS147/lab_08/1101_identifier.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IDENTIFY_1101
+** Warning: F:/Documents/FALL 2018/Comp Arich CS147/lab_08/1101_identifier.v(77): (vlog-2283) Extra semicolon in $unit (global) scope.
+
+
+Top level modules:
+	IDENTIFY_1101
+
+} {} {}}
