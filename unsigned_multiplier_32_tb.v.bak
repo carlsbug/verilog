@@ -1,0 +1,31 @@
+// Name: unsigned_multiplier_32_tb.v
+// Module: unsigned_multiplier_32_tb
+//
+// Notes: Testbench for unsigned_multiplier_32
+//
+// Revision History:
+//
+// Version	Date		Who		email			note
+//------------------------------------------------------------------------------------------
+//  1.0     Nov 26, 2018	Keonwoong Min	keonwoong.min@sjsu.edu
+//------------------------------------------------------------------------------------------
+//
+`timescale 1ns/10ps
+module unsigned_multiplier_32_tb;
+reg [31:0] MCND;
+reg [31:0] MPLR;
+
+wire [31:0]HI;
+wire [31:0]LO;
+
+unsigned_multiplier_32 unsigned_multiplier_32_inst_1(.HI(HI), .LO(LO), .MCND(MCND),.MPLR(MPLR));
+
+initial
+begin
+MCND = 32'b1111; MPLR = 32'b0001;
+#5 MCND = 32'b1000; MPLR = 32'b1000;
+
+#5 $stop;
+end
+
+endmodule

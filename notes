@@ -1,0 +1,55 @@
+Instruction = Inst
+J-type JMP instruction
+  {Inst[31:26],Inst[25:0]}
+  = {Opcode + Address}
+
+  6-bit Extender = {{6'b0},{Inst[25:0]}}, 6'b0 is extended.
+  27-bit Extender = {{27'b0},{Inst[10:6]}}
+General R-type instruction
+  Operation : R[rd] = R[rs] (op) R[rt]
+  {Inst[31:26], Inst[25:21], Inst[20,16], Inst[15:11], Inst[10:6], Inst[5:0]}
+  = {Opcode + rs + rt + rd + shamt + funct}
+
+I-type
+Arithmetic I-type instruction
+  Operation : R[rt] = R[rs] (op) SignExtImm
+  {Inst[31:26], Inst[25:21], Inst[20:16], Inst[15:0]}
+  = {Opcode + rs + rt + immediate}
+
+Logical I-type instruction
+  Operation : R[rt] = R[rs] (op) ZeroExtImm
+  {Inst[31:26], Inst[25:21], Inst[20:16], Inst[15:0]}
+  = {Opcode + rs + rt + immediate}
+
+  Arithmetic
+  16-bit Sign Extender = {{16'b{Inst[15:0]}},{Inst[15:0]}}
+  Logical
+  16-bit Zero Extender = {{16'b0},{Inst[15:0]}}
+  LUI
+  16-bit LSB Zero Extender = {{Inst[15:0]},{16'b0}}
+
+
+Execution for General R-type
+
+sub            000000 0010 1 000000000000000000000
+Multiplication 000000 0011 1 000000000000000000000
+Division       000000 0100 1 000000000000000000000
+Bitwise AND    000000 0101 1 000000000000000000000
+Bitwise OR     000000 0110 1 000000000000000000000
+Bitwise NOR    000000 0111 1 000000000000000000000
+Set Less Than  000000 1000 1 000000000000000000000
+
+Shift Left Logical   000000 1001 0101 000000000000000000
+Shift Right Logical  000000 1010 0101 000000000000000000
+Jump Register
+
+addi 000000 0001 0010000000000000000000
+muli 000000 0011 0010000000000000000000
+andi 000000 0101 0000000000000000000000
+ori  000000 0110 0000000000000000000000
+lui  0x0
+slti 000000 1000 0010000000000000000000
+beq
+bne
+lw
+sw
